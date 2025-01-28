@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/freetable.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img id="logo" src="images/logoonly.png" alt="Free Table logo"> </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="nav-link">Дома</a>
+            <a href="contactus/index.html" class="nav-link">Контакт</a>
+            <a href="download/index.html" class="nav-link">Преземи</a>
+
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div class="maincontainer">
+        <img src="images/phone.png" height="800" class="image" alt="App Showcase">
+        <div class="text-container">
+            <h1 class="maintext">FREE TABLE</h1>
+            <h2 class="explanation">НОВАТА АПЛИКАЦИЈА ЗА ЕДНОСТАВНИ И БРЗИ РЕЗЕРВАЦИИ</h2>
+            <a href="download/index.html" class="download-btn">ПРЕЗЕМИ СЕГА</a>
+        </div>
+    </div>
+
+    <div class="phone-container">
+        <h1 class="maintext">FREE TABLE</h1>
+        <h2 class="explanation">НОВАТА АПЛИКАЦИЈА ЗА ЕДНОСТАВНИ И БРЗИ РЕЗЕРВАЦИИ</h2>
+        <img src="images/phone.png" height="800" class="image" alt="App Showcase">
+        <div class="downloadimages"></div>
+        <a href="download/index.html" class="download-btn">ПРЕЗЕМИ СЕГА</a>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

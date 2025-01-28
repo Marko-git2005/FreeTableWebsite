@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc572dcd0c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/freetable.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img id="logo" src="../images/logoonly.png" alt="Free Table logo"> </a>
+        </div>
+        <div class="menu">
+            <a href="../index.html" class="nav-link">Дома</a>
+            <a href="../contactus/index.html" class="nav-link">Контакт</a>
+            <a href="index.html" class="nav-link">Преземи</a>
+
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="download-picker">
+        <h2 class="download-title">Преземете ја апликацијата</h2>
+        <div class="download-options">
+            <div class="download-option">
+                <i class="fa-brands fa-android fa-8x" style="color: #3fb488;"></i>
+                <p class="download-label">Android</p>
+            </div>
+            <div class="download-option">
+                <i class="fa-brands fa-apple fa-8x" style="color:black"></i>
+                                <p class="download-label">iOS</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

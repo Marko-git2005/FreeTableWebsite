@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: white;
+    color: #3fb488; 
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3fb488;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #b5e4cc;
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+/* Mobile Menu */
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #3fb487b3;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+.menu.active .nav-link {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes bounceButton {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form label {
+        font-size: 4vw;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 4vw;
+    }
+
+    .submit-btn {
+        font-size: 4vw;
+    }
+}
+
+#logo {
+    width: 100px;
+}
+/* App Download Picker Styles */
+.download-picker {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInPicker 1s ease-out;
+}
+
+.download-title {
+    font-size: 3.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.download-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 400px;
+    align-self: center;
+}
+
+.download-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.download-label {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Keyframe Animation */
+@keyframes fadeInPicker {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 800px) {
+    .download-picker {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .download-title {
+        font-size: 2rem;
+    }
+
+    .download-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .download-logo {
+        width: 80px;
+    }
+
+    .download-label {
+        font-size:2rem;
+    }
+}
